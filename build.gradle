@@ -1,1 +1,15 @@
+plugins {
+  id "com.gradle.build-scan" version "3.5"
+}
+
+gradleEnterprise {
+    server = "https://localhost"
+    allowUntrustedServer = true
+
+    buildScan {
+        publishAlways()
+        captureTaskInputFiles = true
+    }
+}
+
 apply from: 'gradle/build-scan-user-data.gradle'

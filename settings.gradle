@@ -1,17 +1,3 @@
-plugins {
-  id "com.gradle.enterprise" version "3.5"
-}
-
-gradleEnterprise {
-    server = "https://localhost"
-    allowUntrustedServer = true
-
-    buildScan {
-        publishAlways()
-        captureTaskInputFiles = true
-    }
-}
-
 boolean isCiServer = System.getenv().containsKey("CI")
 
 buildCache {
