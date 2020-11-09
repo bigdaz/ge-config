@@ -1,0 +1,24 @@
+<gradleEnterprise>
+    <server>
+        <url>http://localhost</url>
+    </server>
+    <buildScan>
+        <captureGoalInputFiles>true</captureGoalInputFiles>
+    </buildScan>
+    <buildCache>
+        <local>
+            <enabled>false</enabled>
+        </local>
+        <remote>
+            <enabled>false</enabled>
+        </remote>
+    </buildCache>
+</gradleEnterprise>
+
+mvn archetype:generate -B -DarchetypeGroupId=org.antlr \
+-DarchetypeArtifactId=antlr3-maven-archetype \
+-DarchetypeVersion=3.4 \
+-DgroupId=com.bigdaz \
+-DartifactId=mvn-antlr \
+-Dversion=1.0 \
+-Dpackage=com.bigdaz.antlr
