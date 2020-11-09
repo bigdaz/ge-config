@@ -1,0 +1,15 @@
+boolean isCiServer = System.getenv().containsKey("CI")
+
+buildCache {
+    local {
+        enabled = !isCiServer
+    }
+    remote(HttpBuildCache) {
+        url = "https://localhost/cache/"
+        allowUntrustedServer = true
+        push = isCiServer
+    }
+}
+
+rootProject.name = 'ge-connect'
+include('lib')
