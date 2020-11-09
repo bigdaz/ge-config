@@ -14,11 +14,3 @@
         </remote>
     </buildCache>
 </gradleEnterprise>
-
-mvn archetype:generate -B -DarchetypeGroupId=org.antlr \
--DarchetypeArtifactId=antlr3-maven-archetype \
--DarchetypeVersion=3.4 \
--DgroupId=com.bigdaz \
--DartifactId=mvn-antlr \
--Dversion=1.0 \
--Dpackage=com.bigdaz.antlr
