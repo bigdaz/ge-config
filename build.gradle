@@ -9,3 +9,9 @@ task build {
         println "BUILDING..."
     }
 }
+
+release {
+    git {
+        requireBranch = "release"
+    }
+}
