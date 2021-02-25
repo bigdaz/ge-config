@@ -1,0 +1,11 @@
+plugins {
+  id "net.researchgate.release" version "2.8.1"
+}
+
+version = "1.0.0-SNAPSHOT"
+
+task build {
+    doFirst {
+        println "BUILDING..."
+    }
+}
