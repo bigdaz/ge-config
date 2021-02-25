@@ -13,6 +13,6 @@ release {
     tagTemplate = 'ge-connect-${version}'
     git {
         requireBranch = "release"
-        pushOptions = ['-n']
+        pushToRemote = System.properties['gitPushRemote']
     }
 }
