@@ -11,7 +11,9 @@ task build {
 }
 
 release {
+    failOnPublishNeeded = false
     git {
         requireBranch = "release"
+        pushOptions = ['-n']
     }
 }
