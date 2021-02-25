@@ -10,6 +10,7 @@ task build {
 
 release {
     failOnPublishNeeded = false
+    tagTemplate = 'ge-connect-${version}'
     git {
         requireBranch = "release"
         pushOptions = ['-n']
